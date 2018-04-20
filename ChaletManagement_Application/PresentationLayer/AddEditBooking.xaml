@@ -1,0 +1,24 @@
+﻿<Window x:Class="PresentationLayer.AddEditBooking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentationLayer"
+        mc:Ignorable="d"
+        Title="Chalet Booking Manager" Height="243.072" Width="457.229">
+    <Grid>
+        <Button x:Name="confirmButton" Content="Confirm" HorizontalAlignment="Left" Margin="270,71,0,0" VerticalAlignment="Top" Width="150" Height="40" Click="addButton_Click" FontSize="16"/>
+        <Button x:Name="backButton" Content="Cancel" HorizontalAlignment="Left" Margin="270,135,0,0" VerticalAlignment="Top" Width="150" Height="40" Click="backButton_Click" FontSize="16"/>
+        <TextBox x:Name="idInBox" HorizontalAlignment="Left" Height="23" Margin="24,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="arrivalInBox" HorizontalAlignment="Left" Height="23" Margin="24,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <Label x:Name="label" Content="Desired Chalet ID (1-10):" HorizontalAlignment="Left" Margin="24,35,0,0" VerticalAlignment="Top" Width="149"/>
+        <Label x:Name="label_Copy" Content="Arrival Date (DD/MM/YYYY):" HorizontalAlignment="Left" Margin="24,89,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label x:Name="titleLabel" Content="New Booking" HorizontalAlignment="Left" Margin="154,10,0,0" VerticalAlignment="Top" Width="169" FontSize="22"/>
+        <TextBox x:Name="departureInBox" HorizontalAlignment="Left" Height="23" Margin="24,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <Label x:Name="label_Copy1" Content="Departure Date (DD/MM/YYYY):" HorizontalAlignment="Left" Margin="24,144,0,0" VerticalAlignment="Top" Width="187"/>
+        <Label x:Name="idError" Content="" HorizontalAlignment="Left" Margin="244,55,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="arrivalError" Content="" HorizontalAlignment="Left" Margin="244,110,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="departureError" Content="" HorizontalAlignment="Left" Margin="244,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.206,-0.005" FontSize="20"/>
+
+    </Grid>
+</Window>
